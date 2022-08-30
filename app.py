@@ -1,29 +1,19 @@
-from flask import Flask, render_template, jsonify, request
-import processor
+from flask import Flask,render_template, request, jsonify
 
+from chat import get_response
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'nyolob02'
+@app.get('/')
+def index_get():
+    return render_template("index.html")
 
+@app.post("/predict")
+def predict():
+    text =request.get_json().get("message")
+    response = get_response(text)
+    message = {"answer": response}
+    return jsonify(message)
 
-@app.route('/', methods=["GET", "POST"])
-def index():
-    return render_template('index.html', **locals())
-
-
-
-@app.route('/chatbot', methods=["GET", "POST"])
-def chatbotResponse():
-
-    if request.method == 'POST':
-        the_question = request.form['question']
-
-        response = processor.chatbot_response(the_question)
-
-    return jsonify({"response": response })
-
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='8888', debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
