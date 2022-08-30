@@ -1,0 +1,110 @@
+{"intents": [
+        {"tag": "greetings",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", 
+         "Good to see you again", 
+         "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!",
+          "Have a nice day",
+           "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", 
+         "Thank you",
+          "That's helpful",
+          "Awesome, thanks",
+          "Thanks for helping me"],
+         "responses": ["Happy to help!",
+         "Any time!", 
+         "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", 
+         "Please give me more info", 
+         "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "aquaponics",
+         "patterns": ["what is aquaponics?",
+         "I want to know more about aquaponics",
+         "tell me more about aquaponics",         
+         "I want to know more about aquaponics"
+        ],
+         "responses": ["Aquaponics is a combination of growing fish and growing plants without soil.Aquaponics is best for people who want to grow their food organically and sustainably."         
+         ],
+         "context": [""]
+        },
+        {
+        "tag": "advantages",
+        "patterns": ["what are the advantages",
+        "What are the upsides?",
+        "Why aquaponics?",
+        "why choose aquaponics?"],
+        "responses":["Aquaponics is best for people who want to grow their food organically and sustainably.The advantage of aquaponics is that it uses less water and no artificial fertilisers. It also allows the farmer to produce a variety of vegetables in the same space and can place the farm close to the consumers. Using a greenhouse, you can also grow your food all year round."
+        ],
+        "context":[""]
+        },
+        {"tag": "how",
+         "patterns": ["how does aquaponics work?",
+         "How does it work?"
+         ],
+         "responses": ["within aquaponics, fish consume fish food and produce fish waste. The waste is covered with nutrients by good bacteria in the system. The plant then absorbs the nutrients and cleans the water.The clean water returns to the fish, and the cycle starts again.",
+         ""],
+         "context": [""]
+        },
+        {
+        "tag":"types",
+        "patterns":["What are the different types of aquaponics systems?",
+        "types of aquaponics"],
+        "responses":["There are four aquaponic systems: media-based aquaponics, raft system, nutrient film technique (NFT) method and hybrid aquaponic system.",""],
+        "context":[]
+        },
+        {
+        "tag":"media-based",
+        "patterns":["What is media-based aquaponics?"],
+        "responses":["A media-based aquaponics is the most common system in aquaponics. A media-based aquaponics uses a grow bed or container filled with grow media (usually gravel or clay pebbles) to plant the vegetables. The grow bed is frequently flooded and drained with water from the fish tank so that the plants can absorb the nutrients.It is relatively cheap, it's good for home gardens,suitable for all kinds of plants and requires minimal but frequent cleaning. However,there is limited growing space and is not suitable for a commercial aquaponics system."],
+        "context":[]
+        },
+        {
+        "tag":"raft",
+        "patterns":["What is a raft system?"],
+        "responses":["In a raft system, the nutrient rich water from the fish tank circulates through a system. The plants are placed on a raft board which floats above the water and the plant roots are submerged in the water, absorbing all the nutrients.The system is restricted to only growing small leafy greens and they have a small root system. The water filtration system increases the cost of the system and there is not enough surface area for the good bacteria to grow for the fish waste to be converted into plant nutrients."],
+        "context":[]
+        },
+        {
+        "tag":"NFT",
+        "patterns":["what is NFT?",
+        "What is a nutrient film technique",
+        "What is a biofilter?"],
+        "responses":["In the NFT method, the plants are grown in a long narrow pipe that has water flowing along the channel to provide the water with nutrients. As there is not enough surface area for the good bacteria to grow, the system has a biofilter to promote good bacteria growth.It uses less materials and space so it can be set up anywhere. The setup also allows for better plant growth as the roots are above the waterline, so it allows the plants to absorb more oxygen. However, the water temperature is harder to control because of the small amount of water that flows in the pipes. Also, the narrow pipes are more likely to be clogged with roots."],
+        "context":[]
+        },
+        {
+        "tag":"hybrid",
+        "patterns":["What is a hybrid aquaponics system?"],
+        "responses":["A hybrid aquaponics system is a combination of the various types of aquaponics systems (e.g., a combination of a NFT and raft system). it offers more flexibility for plants to grow, and you increase the productivity of the system. However, A hybrid aquaponics system is more expensive to setup and harder to manage due to the uniqueness of each system."],
+        "context":[]
+        },
+        {"tag": "Plants",
+         "patterns": ["What kind of plants can you grow?", 
+         "What are best plants to start with?"],
+         "responses": ["The common fruit and vegetables that are grown in an aquaponics unit is cucumbers, peppers, broccoli, tomato, strawberries, spinach, lettuce, mint, coriander, rosemary, chillies, parsley.",
+         "It is always best to start with plants that don't require a lot of nutrients like lettuce, spinach, kale, and other leafy plants. Once your fish are grown you can start adding nutrient hungry plants like tomatoes, peppers and other fruit bearing plants."],
+         "context": [""]
+        },
+        {"tag": "Fish",
+         "patterns": ["what kind of fish can you use, can you use any fish?"],
+         "responses": ["The most common fish used in aquaponics are rainbow trout, catfish, tilapia, koi, and goldfish. Each fish has its advantages and disadvantage."],
+         "context": [""]
+        }
+        
+   ]
+}
+
