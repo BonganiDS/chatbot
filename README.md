@@ -8,7 +8,7 @@ This repo currently contains the starter files.
 Clone repo and create a virtual environment(in brackets I'll have the mac commands)
 ```
 $ git clone https://github.com/BonganiDS/chatbot.git
-$ cd chatbot-deployment
+$ cd chatbot
 $ python3 -m venv venv (conda create --name venv python=3) 
 $ . venv/bin/activate (source activate venv)
 ```
